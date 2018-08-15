@@ -16,3 +16,12 @@ dataset = dataset.rename(columns={
                           'Unnamed: 4': 'Areas',
                           'Unnamed: 5': 'Zones',
                           })
+
+# Filling up nan Values
+from sklearn.preprocessing import Imputer
+imputer = Imputer(missing_values = 'nan', strategy = 'mean', axis = 0)
+
+# Label Encoding
+from sklearn.preprocessing import LabelEncoder, OneHotEncoder
+labelencoder_X = LabelEncoder()
+
