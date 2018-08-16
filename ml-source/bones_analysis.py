@@ -24,5 +24,7 @@ dataset = dataset.dropna(how='any')
 # Label Encoding
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder
 labelencoder_X = LabelEncoder()
-
+obj=dataset['Areas'].groupby(dataset['Zones']) 
+plt.scatter(dataset['Count of Doctors'], dataset['Zones'])
+plt.show()
 
