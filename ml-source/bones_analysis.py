@@ -17,7 +17,7 @@ dataset = dataset.rename(columns={
                           'Unnamed: 5': 'Zones',
                           })
 
-# Filling up nan Values
+# Filling up NaN Values
 from sklearn.preprocessing import Imputer
 imputer = Imputer(missing_values = 'nan', strategy = 'mean', axis = 0)
 
